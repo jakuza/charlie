@@ -1,6 +1,9 @@
 imports:
     - { resource: config.yml }
 
+parameters:
+    charlie_website.repository.offerta: Charlie\WebsiteBundle\Tests\Stub\OffertaRepository
+
 framework:
     router:   { resource: "%kernel.root_dir%/config/routing_dev.yml" }
     profiler: { only_exceptions: false }

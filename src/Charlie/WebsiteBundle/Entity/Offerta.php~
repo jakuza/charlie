@@ -1,0 +1,43 @@
+<?php
+
+namespace Charlie\WebsiteBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity 
+ * @ORM\Table(name="offerta")
+ * 
+ * @ ORM \ Entity (repositoryClass="Avoja\BookMentorBundle\Repository\BookRepository")
+ */
+class Offerta 
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $titolo;
+    
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $sede;
+    
+    /**
+     * @ORM\Column(type="float")
+     */
+    protected $salario;
+    
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $descrizione;
+    
+     
+}

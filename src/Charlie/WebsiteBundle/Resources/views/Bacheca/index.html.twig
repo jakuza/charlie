@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Le nostre offerte - {{ parent() }} {% endblock %}
+
+{% block body %}
+    {% for offerta in offerte %}
+        <div class="offerta">
+            <h2 class="titolo">{{ offerta.titolo }}</h2>
+            <p class="descrizione">
+                {{ offerta.descrizione }}
+                <dl>
+                    <dt>Salario</dt>
+                    <dd class="salario">{{ offerta.salario }}</dd>
+                    <dt>Sede</dt>
+                    <dd class="sede">{{ offerta.sede }}</dd>
+                </dl>
+            </p>
+        </div>
+    {% endfor %}
+{% endblock %}
