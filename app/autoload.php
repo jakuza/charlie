@@ -15,6 +15,7 @@ $loader->registerNamespaces(array(
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
     'Liip'             => __DIR__.'/../vendor/bundles',
+    'Ideato'           => __DIR__.'/../vendor/bundles',
     
     'Doctrine\\Common\\DataFixtures' => __DIR__.'/../vendor/doctrine-fixtures/lib',
 ));

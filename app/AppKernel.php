@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Charlie\WebsiteBundle\CharlieWebsiteBundle(),
             new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle(),
             new Liip\FunctionalTestBundle\LiipFunctionalTestBundle(),
+            new Ideato\SimplePagerBundle\IdeatoSimplePagerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

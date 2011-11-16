@@ -71,3 +71,7 @@
     git=git://github.com/liip/LiipFunctionalTestBundle.git
     target=/bundles/Liip/FunctionalTestBundle
 
+[IdeatoSimplePagerBundle]
+    git=git://github.com/ideatosrl/SimplePagerBundle.git
+    target=/bundles/Ideato/SimplePagerBundle
+
